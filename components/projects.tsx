@@ -12,7 +12,7 @@ export function Projects() {
       technologies: ["PyTorch", "Transformers", "GANs", "VAE", "MusicGen", "Audio Processing"],
       github: "https://github.com/geradivij/Music-Genre-Transformation",
       demo: "#", // Placeholder until deployed
-      report: "/music-genre.pdf",
+      report: "/public/music-genre.pdf",
       image: "/placeholder.svg?height=200&width=400",
       disableDemo: true,
     },
@@ -23,7 +23,7 @@ export function Projects() {
       technologies: ["BERT", "GPT", "NLP", "Healthcare AI", "Fairness ML", "Python"],
       github: "https://github.com/geradivij/Bias-Detection-in-LLMs",
       demo: null,
-      report: "/bias-llm.pdf",
+      report: "public//bias-llm.pdf",
       image: "/placeholder.svg?height=200&width=400",
     },
     {

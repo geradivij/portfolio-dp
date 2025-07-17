@@ -62,7 +62,7 @@ export function Hero() {
               <Mail className="mr-2 h-4 w-4" />
               Get In Touch
             </Button>
-            <a href="/resume.pdf" download>
+            <a href="/public/resume.pdf" download>
               <Button variant="outline" size="lg" className="bg-background text-foreground">
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
