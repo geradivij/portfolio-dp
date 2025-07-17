@@ -10,19 +10,20 @@ export function Projects() {
       description:
         "Prototyped music genre transformation pipeline using Transformer, CycleGAN, VAE, StarGAN, and MusicGen. Adapted MusicGen LLM for audio-to-audio genre transfer with real-time creative remixing through web interface.",
       technologies: ["PyTorch", "Transformers", "GANs", "VAE", "MusicGen", "Audio Processing"],
-      github: "#",
-      demo: "#", // This one has a live demo
-      report: "#", // PDF report will be added
+      github: "https://github.com/geradivij/Music-Genre-Transformation",
+      demo: "#", // Placeholder until deployed
+      report: "/music-genre.pdf",
       image: "/placeholder.svg?height=200&width=400",
+      disableDemo: true,
     },
     {
       title: "Bias Detection and Mitigation in Clinical LLMs",
       description:
         "Built bias detection framework using ClinicalBERT and BioGPT on MIMIC-III EHR data. Applied fairness mitigation techniques that reduced Mean Prediction Disparity by 50%+ without impacting model accuracy.",
       technologies: ["BERT", "GPT", "NLP", "Healthcare AI", "Fairness ML", "Python"],
-      github: "#",
-      demo: null, // No live demo
-      report: "#", // PDF report will be added
+      github: "https://github.com/geradivij/Bias-Detection-in-LLMs",
+      demo: null,
+      report: "/bias-llm.pdf",
       image: "/placeholder.svg?height=200&width=400",
     },
     {
@@ -30,7 +31,7 @@ export function Projects() {
       description:
         "Alzi is an AI companion designed to help people in the early stages of Alzheimer's. It helps patients recognize familiar faces, responds in voices they know and love, keeps track of conversation context, assists with daily tasks, and provides helpful reminders throughout the day.",
       technologies: ["AI/ML", "Voice Synthesis", "Computer Vision", "NLP", "Healthcare AI", "Context Management"],
-      github: "#",
+      github: "https://github.com/Arshia786-stack/Alzi",
       demo: "#",
       report: null,
       image: "/placeholder.svg?height=200&width=400",
@@ -40,8 +41,8 @@ export function Projects() {
       description:
         "AI-powered classification models to identify cardiovascular disease risk using retinal fundus images. Collaborating with PhD candidates under Prof. Anita Penkova at USC to apply agentic AI techniques in biomedical imaging.",
       technologies: ["Python", "Deep Learning", "Computer Vision", "LLMs", "GenAI", "Medical Imaging"],
-      github: "#",
-      demo: "#",
+      github: null,
+      demo: null,
       report: null,
       image: "/placeholder.svg?height=200&width=400",
     },
@@ -76,21 +77,35 @@ export function Projects() {
                     ))}
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <Button variant="outline" size="sm" className="bg-background text-foreground">
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
-                    </Button>
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" size="sm" className="bg-background text-foreground">
+                          <Github className="mr-2 h-4 w-4" />
+                          Code
+                        </Button>
+                      </a>
+                    )}
                     {project.demo && (
-                      <Button size="sm">
+                      <Button
+                        size="sm"
+                        disabled={project.disableDemo}
+                        className={
+                          project.disableDemo
+                            ? "bg-gray-300 text-gray-600 cursor-not-allowed"
+                            : "bg-[#f6e27f] text-black hover:bg-[#e6d766]"
+                        }
+                      >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Live Demo
                       </Button>
                     )}
                     {project.report && (
-                      <Button variant="secondary" size="sm">
-                        <FileText className="mr-2 h-4 w-4" />
-                        Report
-                      </Button>
+                      <a href={project.report} target="_blank" rel="noopener noreferrer">
+                        <Button variant="secondary" size="sm">
+                          <FileText className="mr-2 h-4 w-4" />
+                          Report
+                        </Button>
+                      </a>
                     )}
                   </div>
                 </CardContent>

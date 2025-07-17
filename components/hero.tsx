@@ -62,10 +62,12 @@ export function Hero() {
               <Mail className="mr-2 h-4 w-4" />
               Get In Touch
             </Button>
-            <Button variant="outline" size="lg" className="bg-background text-foreground">
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
-            </Button>
+            <a href="/resume.pdf" download>
+              <Button variant="outline" size="lg" className="bg-background text-foreground">
+                <Download className="mr-2 h-4 w-4" />
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           <div
@@ -73,15 +75,21 @@ export function Hero() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <Button variant="ghost" size="icon" className="h-12 w-12 hover:scale-110 transition-transform">
-              <Github className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12 hover:scale-110 transition-transform">
-              <Linkedin className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12 hover:scale-110 transition-transform">
-              <Mail className="h-6 w-6" />
-            </Button>
+            <a href="https://github.com/geradivij" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="h-12 w-12 hover:scale-110 transition-transform">
+                <Github className="h-6 w-6" />
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/divijgera/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="h-12 w-12 hover:scale-110 transition-transform">
+                <Linkedin className="h-6 w-6" />
+              </Button>
+            </a>
+            <a href="mailto:dgera@usc.edu">
+              <Button variant="ghost" size="icon" className="h-12 w-12 hover:scale-110 transition-transform">
+                <Mail className="h-6 w-6" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>
