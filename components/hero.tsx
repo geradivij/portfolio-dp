@@ -11,13 +11,6 @@ export function Hero() {
     setIsVisible(true)
   }, [])
 
-  const scrollToContact = () => {
-    const element = document.getElementById("contact")
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <section className="min-h-screen flex items-center justify-center pt-32">
       <div className="container mx-auto px-4 text-center">
@@ -58,16 +51,18 @@ export function Hero() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <Button size="lg" onClick={scrollToContact}>
-              <Mail className="mr-2 h-4 w-4" />
-              Get In Touch
+            <Button size="lg" asChild>
+              <a href="mailto:dgera@usc.edu">
+                <Mail className="mr-2 h-4 w-4" />
+                Get In Touch
+              </a>
             </Button>
-            <a href="/public/resume.pdf" download>
-              <Button variant="outline" size="lg" className="bg-background text-foreground">
+            <Button variant="outline" size="lg" asChild>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
-              </Button>
-            </a>
+              </a>
+            </Button>
           </div>
 
           <div
