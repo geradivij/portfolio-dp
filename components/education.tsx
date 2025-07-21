@@ -10,6 +10,7 @@ export function Education() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Education</h2>
 
           <div className="space-y-8">
+            {/* USC */}
             <Card>
               <CardHeader>
                 <div className="flex items-start space-x-4">
@@ -35,6 +36,16 @@ export function Education() {
               <CardContent>
                 <div className="space-y-4">
                   <div>
+                    <h4 className="font-semibold mb-2">Overview:</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Currently pursuing my MS in Computer Science at USC, where I’m building expertise across a wide
+                      range of domains — including artificial intelligence, web technologies, information retrieval,
+                      and search systems. My work blends research-driven curiosity with hands-on engineering,
+                      particularly in applied AI, GenAI, and fairness in machine learning.
+                    </p>
+                  </div>
+
+                  <div>
                     <h4 className="font-semibold mb-2">Focus Areas:</h4>
                     <div className="flex flex-wrap gap-2">
                       {[
@@ -46,6 +57,10 @@ export function Education() {
                         "Generative AI",
                         "Large Language Models",
                         "AI Engineering",
+                        "AI Product Development",
+                        "Fairness & Ethics in AI",
+                        "Web Technologies",
+                        "Information Retrieval",
                       ].map((course, index) => (
                         <Badge key={index} variant="outline" className="text-xs">
                           {course}
@@ -53,19 +68,11 @@ export function Education() {
                       ))}
                     </div>
                   </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-2">Current Research:</h4>
-                    <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                      <li>Retinal Fundus Image Analysis for Cardiovascular Disease Risk Prediction</li>
-                      <li>Agentic AI techniques in biomedical imaging</li>
-                      <li>Collaborating with PhD candidates under Prof. Anita Penkova</li>
-                    </ul>
-                  </div>
                 </div>
               </CardContent>
             </Card>
 
+            {/* DTU */}
             <Card>
               <CardHeader>
                 <div className="flex items-start space-x-4">
@@ -103,6 +110,7 @@ export function Education() {
               </CardContent>
             </Card>
 
+            {/* Skills & Interests */}
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>

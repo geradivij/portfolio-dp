@@ -8,22 +8,31 @@ import { Github, ExternalLink, FileText } from "lucide-react"
 export function Projects() {
   const projects = [
     {
-      title: "Bias Detection in LLMs",
+      title: "Bias Detection in Medical LLMs",
       description:
-        "Developed a robust system to detect and mitigate biases in Large Language Models, ensuring fairness and ethical AI deployment.",
+        "Developed a robust system to detect and mitigate biases in Medical Large Language Models, particularly BioGPT and ClinincalBERT, ensuring fairness and ethical AI deployment.",
       technologies: ["Python", "PyTorch", "NLP", "Transformers", "Fairness AI"],
       githubLink: "https://github.com/geradivij/bias-detection-llms",
       reportLink: "/bias-detection.pdf",
-      liveLink: "#", // Placeholder for live demo
+      liveLink: "#",
     },
     {
-      title: "Music Genre Classification",
+      title: "Music Genre Transfer using Deep Generative Architectures",
       description:
-        "Built a deep learning model to accurately classify music genres from audio features, achieving high precision on a diverse dataset.",
-      technologies: ["Python", "TensorFlow", "Deep Learning", "Audio Processing", "CNNs"],
+        "Built a generative AI pipeline to convert songs from one genre to another while preserving their underlying structure using models like MusicGen, CycleGAN, and VAE.",
+      technologies: ["Python", "MusicGen", "CycleGAN", "Transformers", "Audio Processing", "Deep Learning"],
       githubLink: "https://github.com/geradivij/music-genre-classification",
       reportLink: "/music-genre.pdf",
-      liveLink: "#", // Placeholder for live demo
+      liveLink: "#",
+    },
+    {
+      title: "Alzi – AI Companion for Alzheimer’s Patients",
+      description:
+        "An AI-based mobile assistant that helps Alzheimer’s patients recognize familiar faces, stay on schedule with reminders, and interact via voice cloning in known voices.",
+      technologies: ["Flutter", "Vocal cloning", "InsightFace", "LMNT TTS", "Firebase", "LLMs", "Voice AI"],
+      githubLink: "https://github.com/Arshia786-stack/Alzi",
+      reportLink: null,
+      liveLink: "#",
     },
     {
       title: "Personal Portfolio Website",
@@ -31,8 +40,26 @@ export function Projects() {
         "Designed and developed this responsive personal portfolio website to showcase projects, skills, and experience using modern web technologies.",
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn/ui"],
       githubLink: "https://github.com/geradivij/personal-portfolio",
-      reportLink: null, // No specific report for this project
-      liveLink: "https://divijgera.vercel.app", // Example live link
+      reportLink: null,
+      liveLink: "https://divijgera.vercel.app",
+    },
+    {
+      title: "Retinal Fundus Image Analysis for Cardiovascular Risk",
+      description:
+        "Built AI models to predict cardiovascular disease risk from retinal fundus images under Prof Anita Penkova at University of Southern California. Used deep learning and agentic AI techniques in collaboration with multiple research teams.",
+      technologies: ["Python", "Deep Learning", "Computer Vision", "Medical Imaging", "LLMs"],
+      githubLink: null,
+      reportLink: null,
+      liveLink: null,
+    },
+    {
+      title: "Pneumonia Detection from Chest X-rays",
+      description:
+        "Developed a convolutional neural network to classify pneumonia from chest X-ray images with high precision using a publicly available medical dataset.",
+      technologies: ["Python", "TensorFlow", "CNN", "Medical Imaging"],
+      githubLink: "https://github.com/geradivij/Pneumonia-CNNs",
+      reportLink: null,
+      liveLink: null,
     },
   ]
 
