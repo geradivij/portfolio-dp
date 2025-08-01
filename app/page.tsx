@@ -7,6 +7,7 @@ import { Experience } from "@/components/experience"
 import { Education } from "@/components/education"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import Chat from "@/components/chat"
 
 export default function Portfolio() {
   return (
@@ -21,6 +22,7 @@ export default function Portfolio() {
         <Education />
         <Contact />
       </main>
+      <Chat />
       <Footer />
     </div>
   )

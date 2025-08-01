@@ -1,0 +1,78 @@
+{
+  "full_name": "Divij Gera",
+  "email": "dgera@usc.edu",
+  "phone": "+1 (425) 209-6991",
+  "location": "Los Angeles, California",
+  "current_program": "Master of Science in Computer Science at the University of Southern California",
+  "graduation_date": "May 2026",
+  "previous_education": "Bachelor of Technology in Software Engineering from Delhi Technological University (2019–2023)",
+  "gpa_ms": "4.0/4.0",
+  "cgpa_btech": "9.09/10",
+  "visa_status": "F-1 visa with full CPT and OPT eligibility",
+  "work_eligibility": "Can work part-time during the semester and full-time during breaks via CPT. Eligible for full-time roles under OPT post graduation, extendable for up to 3 years (STEM OPT).",
+  "technical_skills": "Python, C, C++, MySQL, TensorFlow, PyTorch, Hugging Face, OpenAI API, Scikit-learn, Jupyter, GitHub, VSCode, Google Colab",
+  "devops_cloud_skills": "CI/CD, DevSecOps, Kubernetes, GitLab, AWS, Snowflake, Informatica",
+  "areas_of_expertise": "Artificial Intelligence, Machine Learning, Deep Learning, Large Language Models (LLMs), Generative AI, Prompt Engineering, NLP, Computer Vision, Information Retrieval, Web Technologies",
+  "notable_projects": [
+    {
+      "title": "Bias Detection in Clinical LLMs",
+      "summary": "Developed a bias detection framework using ClinicalBERT and BioGPT on MIMIC-III dataset. Applied fairness metrics and mitigation techniques to reduce demographic prediction disparity.",
+      "github": "https://github.com/geradivij/Bias-Detection-in-LLMs",
+      "report": "/bias-detection.pdf"
+    },
+    {
+      "title": "Music Genre Transfer using Generative Architectures",
+      "summary": "Created a pipeline using MusicGen, CycleGAN, and VAE to convert songs from one genre to another while preserving core structure. Demonstrated audio-to-audio generation and remixing via prompt conditioning.",
+      "github": "https://github.com/geradivij/music-genre-classification",
+      "report": "/music-genre.pdf"
+    },
+    {
+      "title": "Alzi – AI Companion for Alzheimer’s Patients",
+      "summary": "Mobile assistant app that helps Alzheimer’s patients recognize faces, interact via voice cloning, receive reminders, and manage daily routines.",
+      "github": "https://github.com/Arshia786-stack/Alzi"
+    },
+    {
+      "title": "Pneumonia Detection from X-rays",
+      "summary": "Built a convolutional neural network model to detect pneumonia from chest X-ray images with high accuracy.",
+      "github": "https://github.com/geradivij/pneumonia-cnn"
+    },
+    {
+      "title": "Personal Portfolio Website",
+      "summary": "Built and deployed a modern personal portfolio using Next.js, Tailwind CSS, and Vercel. Fully responsive and includes a chatbot interface and project showcase.",
+      "github": "https://github.com/geradivij/personal-portfolio",
+      "live": "https://divijgera.vercel.app"
+    }
+  ],
+  "current_focus": "AI engineering, fairness in machine learning, audio and generative models, and applied LLMs in real-world use cases.",
+  "interests": "Storytelling through theatre, creative writing, student community involvement, mentoring, and technical leadership.",
+  "languages_spoken": ["English", "Hindi"],
+  "past_companies": [
+    {
+      "company": "NatWest Group",
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "duration": "Jul 2023 – Jul 2024",
+          "summary": "Led cloud migration of 70K+ projects to AWS. Built CI/CD analytics dashboards and automated code visibility pipelines."
+        },
+        {
+          "title": "Data Analytics Intern",
+          "duration": "Jun 2022 – Aug 2022",
+          "summary": "Migrated relational data pipelines to Snowflake and modernized analytics processes."
+        }
+      ]
+    },
+    {
+      "company": "Get Me Therapy",
+      "role": "Product Manager",
+      "duration": "Jul 2022 – Jul 2023",
+      "summary": "Led product design and MVP launch of AI-driven mental health solutions. Boosted operational efficiency and revenue growth by 15%."
+    },
+    {
+      "company": "Favcy Venture Builders",
+      "role": "Intern",
+      "duration": "Aug 2021 – Feb 2022",
+      "summary": "Worked on startup UX design, market analytics, and business model validation."
+    }
+  ]
+}
