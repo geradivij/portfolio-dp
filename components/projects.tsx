@@ -11,8 +11,15 @@ export function Projects() {
     {
       title: "InstaNova",
       description:
-        "A GitHub-hosted InstaNova application project. This portfolio entry links directly to the repository for the latest implementation details and feature set.",
-      technologies: ["GitHub", "Web App"],
+        "CLR Agent is a local desktop focus assistant that monitors behavior and webcam signals, estimates cognitive load, and triggers nudges, break overlays, and distraction-reduction actions when overload is detected.",
+      technologies: [
+        "Python",
+        "Computer Vision",
+        "Agent Loop",
+        "Gemma",
+        "LoRA",
+        "Desktop Automation",
+      ],
       githubLink: "https://github.com/geradivij/instanova",
       reportLink: null,
       liveLink: null,
