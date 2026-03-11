@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Card, CardContent } from "@/components/ui/card"
+import { withBasePath } from "@/lib/base-path"
 import { Code, Lightbulb, Users } from "lucide-react"
 
 export default function About() {
@@ -18,7 +19,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <Image
-            src="/divij.jpg"
+            src={withBasePath("/divij.jpg")}
             alt="Divij Gera"
             fill
             className="object-cover grayscale hover:grayscale-0 transition duration-500"

@@ -3,10 +3,20 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { withBasePath } from "@/lib/base-path"
 import { Github, ExternalLink, FileText } from "lucide-react"
 
 export function Projects() {
   const projects = [
+    {
+      title: "InstaNova",
+      description:
+        "A GitHub-hosted InstaNova application project. This portfolio entry links directly to the repository for the latest implementation details and feature set.",
+      technologies: ["GitHub", "Web App"],
+      githubLink: "https://github.com/geradivij/instanova",
+      reportLink: null,
+      liveLink: null,
+    },
     {
       title: "Bias Detection in Medical LLMs",
       description:
@@ -95,7 +105,7 @@ export function Projects() {
                   )}
                   {project.reportLink && (
                     <Button variant="outline" size="sm" asChild>
-                      <a href={project.reportLink} target="_blank" rel="noopener noreferrer">
+                      <a href={withBasePath(project.reportLink)} target="_blank" rel="noopener noreferrer">
                         <FileText className="mr-2 h-4 w-4" />
                         Report
                       </a>

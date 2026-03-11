@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import { withBasePath } from "@/lib/base-path"
 import { Github, Linkedin, Mail, Download } from "lucide-react"
 import { useEffect, useState } from "react"
 
@@ -58,7 +59,7 @@ export function Hero() {
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={withBasePath("/resume.pdf")} target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </a>

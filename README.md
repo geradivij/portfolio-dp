@@ -12,7 +12,23 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 ## Deployment
 
-Your project is live at:
+This repo can be deployed either on Vercel or GitHub Pages.
+
+### GitHub Pages
+
+This project is configured to export as a static site during GitHub Actions builds.
+
+1. Push this repository to GitHub.
+2. In GitHub, open `Settings -> Pages`.
+3. Under `Source`, select `GitHub Actions`.
+4. Keep your default branch as `main`.
+5. Push to `main`; the workflow at `.github/workflows/deploy.yml` will build and publish the `out/` directory.
+
+If the repository is not named `geradivij.github.io`, the site will be served from a subpath such as `https://geradivij.github.io/portfolio-dp/`. The Next.js config already adjusts the base path automatically for that GitHub Pages build.
+
+### Vercel
+
+Your project is also live at:
 
 **[https://vercel.com/dgera-3854s-projects/v0-grad-sde-portfolio](https://vercel.com/dgera-3854s-projects/v0-grad-sde-portfolio)**
 
