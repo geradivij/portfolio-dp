@@ -25,28 +25,42 @@ export function Header() {
   if (!mounted) return null
 
   return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-sm border-b z-50 h-20">
+    <header className="fixed top-0 z-50 w-full border-b bg-background/70 backdrop-blur-xl">
       <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold">
             <span className="text-primary">Divij</span> Gera
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection("about")} className="hover:text-primary transition-colors">
+          <nav className="hidden items-center space-x-2 rounded-full border bg-background/75 px-3 py-2 md:flex">
+            <button
+              onClick={() => scrollToSection("about")}
+              className="rounded-full px-4 py-2 text-sm transition-colors hover:bg-primary/10 hover:text-primary"
+            >
               About
             </button>
-            <button onClick={() => scrollToSection("skills")} className="hover:text-primary transition-colors">
+            <button
+              onClick={() => scrollToSection("skills")}
+              className="rounded-full px-4 py-2 text-sm transition-colors hover:bg-primary/10 hover:text-primary"
+            >
               Skills
             </button>
-            <button onClick={() => scrollToSection("projects")} className="hover:text-primary transition-colors">
+            <button
+              onClick={() => scrollToSection("projects")}
+              className="rounded-full px-4 py-2 text-sm transition-colors hover:bg-primary/10 hover:text-primary"
+            >
               Projects
             </button>
-            <button onClick={() => scrollToSection("experience")} className="hover:text-primary transition-colors">
+            <button
+              onClick={() => scrollToSection("experience")}
+              className="rounded-full px-4 py-2 text-sm transition-colors hover:bg-primary/10 hover:text-primary"
+            >
               Experience
             </button>
-            <button onClick={() => scrollToSection("contact")} className="hover:text-primary transition-colors">
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="rounded-full px-4 py-2 text-sm transition-colors hover:bg-primary/10 hover:text-primary"
+            >
               Contact
             </button>
           </nav>
@@ -56,44 +70,42 @@ export function Header() {
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
 
-            {/* Mobile Menu Button */}
             <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t">
+          <nav className="mt-4 border-t pb-4 md:hidden">
             <div className="flex flex-col space-y-4 pt-4">
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-left hover:text-primary transition-colors"
+                className="text-left transition-colors hover:text-primary"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("skills")}
-                className="text-left hover:text-primary transition-colors"
+                className="text-left transition-colors hover:text-primary"
               >
                 Skills
               </button>
               <button
                 onClick={() => scrollToSection("projects")}
-                className="text-left hover:text-primary transition-colors"
+                className="text-left transition-colors hover:text-primary"
               >
                 Projects
               </button>
               <button
                 onClick={() => scrollToSection("experience")}
-                className="text-left hover:text-primary transition-colors"
+                className="text-left transition-colors hover:text-primary"
               >
                 Experience
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-left hover:text-primary transition-colors"
+                className="text-left transition-colors hover:text-primary"
               >
                 Contact
               </button>

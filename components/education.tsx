@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { GraduationCap, Award, Calendar } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Award, Calendar, GraduationCap } from "lucide-react"
 
 export function Education() {
   return (
@@ -10,7 +10,6 @@ export function Education() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Education</h2>
 
           <div className="space-y-8">
-            {/* USC */}
             <Card>
               <CardHeader>
                 <div className="flex items-start space-x-4">
@@ -38,10 +37,10 @@ export function Education() {
                   <div>
                     <h4 className="font-semibold mb-2">Overview:</h4>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Currently pursuing my MS in Computer Science at USC, where I’m building expertise across a wide
-                      range of domains — including artificial intelligence, web technologies, information retrieval,
-                      and search systems. My work blends research-driven curiosity with hands-on engineering,
-                      particularly in applied AI, GenAI, and fairness in machine learning.
+                      Currently pursuing my MS in Computer Science at USC, where I&apos;m building expertise across a wide
+                      range of domains, including artificial intelligence, web technologies, information retrieval, and
+                      search systems. My work blends research-driven curiosity with hands-on engineering, particularly
+                      in applied AI, GenAI, and fairness in machine learning.
                     </p>
                   </div>
 
@@ -72,7 +71,6 @@ export function Education() {
               </CardContent>
             </Card>
 
-            {/* DTU */}
             <Card>
               <CardHeader>
                 <div className="flex items-start space-x-4">
@@ -110,7 +108,6 @@ export function Education() {
               </CardContent>
             </Card>
 
-            {/* Skills & Interests */}
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
@@ -121,10 +118,10 @@ export function Education() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• AI Engineering & Agentic AI</li>
-                    <li>• Large Language Models (LLMs)</li>
-                    <li>• Generative AI & Prompt Engineering</li>
-                    <li>• Computer Vision & NLP</li>
+                    <li>AI Engineering & Agentic AI</li>
+                    <li>Large Language Models (LLMs)</li>
+                    <li>Generative AI & Prompt Engineering</li>
+                    <li>Computer Vision & NLP</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -138,10 +135,10 @@ export function Education() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• Healthcare AI & Medical Imaging</li>
-                    <li>• Bias Detection in AI Systems</li>
-                    <li>• Music Generation & Audio AI</li>
-                    <li>• Fairness in Machine Learning</li>
+                    <li>Healthcare AI & Medical Imaging</li>
+                    <li>Bias Detection in AI Systems</li>
+                    <li>Music Generation & Audio AI</li>
+                    <li>Fairness in Machine Learning</li>
                   </ul>
                 </CardContent>
               </Card>

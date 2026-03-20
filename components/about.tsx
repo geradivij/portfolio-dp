@@ -8,12 +8,10 @@ import { Code, Lightbulb, Users } from "lucide-react"
 
 export default function About() {
   return (
-    <section id="about" className="w-full py-20 bg-white text-black px-6 lg:px-20 font-sans">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 mb-16">
-
-        {/* IMAGE */}
+    <section id="about" className="section-shell w-full px-6 py-24 lg:px-20">
+      <div className="mx-auto mb-16 flex max-w-6xl flex-col items-center gap-12 md:flex-row">
         <motion.div
-          className="flex-shrink-0 w-72 h-72 md:w-80 md:h-80 relative rounded-full overflow-hidden border-4 border-black"
+          className="relative h-72 w-72 flex-shrink-0 overflow-hidden rounded-[2rem] border border-primary/20 shadow-[0_24px_60px_rgba(0,0,0,0.12)] md:h-80 md:w-80"
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -22,33 +20,46 @@ export default function About() {
             src={withBasePath("/divij.jpg")}
             alt="Divij Gera"
             fill
-            className="object-cover grayscale hover:grayscale-0 transition duration-500"
+            className="object-cover grayscale-[20%] transition duration-500 hover:grayscale-0"
           />
         </motion.div>
 
-
-        {/* TEXT */}
         <motion.div
           className="flex-1"
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl">
-            I'm Divij Gera, a Computer Science graduate student at the University of Southern California, with a background in Software Engineering from Delhi Technological University. Previously, I worked at NatWest Group, where I bridged roles in development and data analytics, and explored mental health product design as a PM at Get Me Therapy. 
-            <br /><br />
-            I'm especially passionate about artificial intelligence and machine learning — building solutions that feel equal parts creative and technical. Outside of academics, I enjoy storytelling through theatre, reading and contributing to student communities at USC. Whether it's debugging code or organizing an event, I find joy in doing things with purpose and curiosity.
+          <div className="mb-4 inline-flex rounded-full border border-primary/20 bg-background/80 px-4 py-2 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+            About Me
+          </div>
+          <h2 className="mb-4 text-3xl font-bold md:text-5xl">Engineering with curiosity, empathy, and sharp execution.</h2>
+          <p className="mb-6 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">
+            I&apos;m Divij Gera, a computer science graduate student at the University of Southern California with a
+            background in software engineering from Delhi Technological University. My experience spans enterprise
+            engineering at NatWest, product exploration in mental health, and research-heavy work in applied AI.
+            <br />
+            <br />
+            I&apos;m especially drawn to AI and machine learning projects that combine technical depth with a strong user
+            outcome. Outside of academics, I enjoy theatre, reading, and building communities at USC. Whether I&apos;m
+            debugging a model, shaping a product, or coordinating a team, I care about doing thoughtful work with
+            momentum.
           </p>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {["AI/ML systems", "Research to deployment", "Cross-functional leadership"].map((item) => (
+              <div key={item} className="rounded-2xl border bg-background/70 px-4 py-3 text-sm text-muted-foreground">
+                {item}
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
 
-      {/* CARDS SECTION */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <Card>
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <Card className="rounded-[1.5rem] bg-background/75">
           <CardContent className="p-6">
             <div className="flex items-center space-x-4">
-              <div className="p-2 bg-primary/10 rounded-lg">
+              <div className="rounded-lg bg-primary/10 p-2">
                 <Code className="h-6 w-6 text-primary" />
               </div>
               <div>
@@ -61,10 +72,10 @@ export default function About() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="rounded-[1.5rem] bg-background/75">
           <CardContent className="p-6">
             <div className="flex items-center space-x-4">
-              <div className="p-2 bg-primary/10 rounded-lg">
+              <div className="rounded-lg bg-primary/10 p-2">
                 <Lightbulb className="h-6 w-6 text-primary" />
               </div>
               <div>
@@ -77,10 +88,10 @@ export default function About() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="rounded-[1.5rem] bg-background/75">
           <CardContent className="p-6">
             <div className="flex items-center space-x-4">
-              <div className="p-2 bg-primary/10 rounded-lg">
+              <div className="rounded-lg bg-primary/10 p-2">
                 <Users className="h-6 w-6 text-primary" />
               </div>
               <div>
