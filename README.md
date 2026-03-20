@@ -1,46 +1,78 @@
-# Grad SDE Portfolio
+# Divij Gera Portfolio
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/dgera-3854s-projects/v0-grad-sde-portfolio)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/n2M8kGwDDX4)
+Personal portfolio website built with Next.js, React, TypeScript, and Tailwind CSS.
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+This project showcases:
 
-## Deployment
+- experience and education
+- AI, ML, and software projects
+- contact links and resume download
 
-This repo can be deployed either on Vercel or GitHub Pages.
+The site is designed as a polished personal portfolio with a strong focus on AI engineering, research, and product work.
 
-### GitHub Pages
+## Tech Stack
 
-This project is configured to export as a static site during GitHub Actions builds.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
 
-1. Push this repository to GitHub.
-2. In GitHub, open `Settings -> Pages`.
-3. Under `Source`, select `GitHub Actions`.
-4. Keep your default branch as `main`.
-5. Push to `main`; the workflow at `.github/workflows/deploy.yml` will build and publish the `out/` directory.
+## Local Development
 
-If the repository is not named `geradivij.github.io`, the site will be served from a subpath such as `https://geradivij.github.io/portfolio-dp/`. The Next.js config already adjusts the base path automatically for that GitHub Pages build.
+1. Install dependencies:
 
-### Vercel
+```bash
+npm install
+```
 
-Your project is also live at:
+2. Start the development server:
 
-**[https://vercel.com/dgera-3854s-projects/v0-grad-sde-portfolio](https://vercel.com/dgera-3854s-projects/v0-grad-sde-portfolio)**
+```bash
+npm run dev
+```
 
-## Build your app
+3. Open:
 
-Continue building your app on:
+```text
+http://localhost:3000
+```
 
-**[https://v0.dev/chat/projects/n2M8kGwDDX4](https://v0.dev/chat/projects/n2M8kGwDDX4)**
+## Production Build
 
-## How It Works
+Run:
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+npm run build
+```
+
+Then start the production server with:
+
+```bash
+npm run start
+```
+
+## GitHub Pages
+
+This project includes support for GitHub Pages deployment through the existing repository configuration.
+
+If the repository is not named `geradivij.github.io`, the site is served from a subpath such as:
+
+```text
+https://geradivij.github.io/portfolio-dp/
+```
+
+## Project Structure
+
+- `app/` - Next.js app router files
+- `components/` - portfolio sections and UI components
+- `public/` - images, PDFs, and static assets
+- `lib/` - utility helpers
+
+## Notes
+
+- The downloadable resume is served from `public/resume.pdf`
+- Project PDFs and images are stored in `public/`
